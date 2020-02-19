@@ -36,9 +36,10 @@ class FBFriends{
 	bool is_friend(const Friend& f) const;
 	void load(std::istream& ins);
 	void save(std::ostream& outs);
+
     private:
 	void resize(); // increases the capacity of the container by 5
-	Friend *data;
+	Friend* data;
 	int used;
 	int capacity;
 	int current_index;
